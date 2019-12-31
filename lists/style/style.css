@@ -1,0 +1,84 @@
+html{
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+div{
+    width: 35%;
+    max-width: 500px;
+    margin: 100px auto;
+}
+    /* Первый список  */
+.first {
+    background-color:#ED9EAE;
+    list-style: none;
+    padding: 15px 15px 5px 15px;
+    counter-reset: li;
+    color: whitesmoke;
+    font-size: 18px;
+}
+
+.first li{
+    background-color: #C66376;
+    padding: 5px 10px;
+    margin: 0 0 10px 0;
+}
+
+.first li::before{
+    content: counter(li)". ";
+    counter-increment: li;
+}
+
+.first li span{
+    background-color: #9e354a;
+    padding: inherit;
+}
+/*------------------------------------------------*/
+
+/* Второй список */
+ul{
+    margin: 0;
+    padding: 0;
+}
+
+ul li{
+    list-style: none;
+    padding: 10px 10px 10px 20px;
+    background: #a5ccda;
+}
+
+ul li:nth-child(even) {
+    background: #ADD8E6;
+}
+
+ul li.check {
+    background: #E2E2E2;
+    text-decoration: line-through;
+}
+ul li::after{
+    content: "\2718";
+    display: inline-block;
+    margin-left: 10px;
+    font-size: 8pt;
+    color: firebrick;
+}
+
+ul li::before {
+    content: "";
+    display: inline-block;
+    width: 15px;
+    height: 15px;
+    margin-right: 20px;
+    background-image: url(image/uncheck.png);
+    background-size: contain;
+}
+
+ul li.check::before{
+        content: "";
+        display: inline-block;
+        width: 15px;
+        height: 15px;
+        margin-right: 20px;
+        background-image: url(image/check.png);
+        background-size: contain;
+}
+

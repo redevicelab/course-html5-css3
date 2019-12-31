@@ -1,0 +1,109 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="styleback.css">
+    <title>My blog</title>
+</head>
+
+<body>
+    <header class="header">
+        <h1 class="logo"><a href="#">REDEVICE</a></h1>
+        <ul class="main-nav">
+            <li><a href="#">Главная</a></li>
+            <li><a href="#feedback">Обратная связь</a></li>
+            <li><a href="#gallery">Галерея</a></li>
+            <li><a href="#сontacts">Контакты</a></li>
+        </ul>
+    </header>
+
+    <div class="img-block"></div>
+    <h2 class="content-header" id="сontacts">Обо мне</h2>
+
+    <div class="content">
+        
+        <p>
+            Всем привет меня зовут <b>Александр</b>, Я инженер электронщик.
+            Профессионально занимаюсь разработкой различных
+            электронных устройств на базе микроконтроллеров и
+            микрокомпьютеров. А это значит что я могу
+            делать прикольные автоматизированные или
+            управляемые устройства:
+        </p>
+        <p>
+            При создании устройства обычно проектирутся печатная плата
+            на ней размещаются различные очень маленькие компоненты такие как:
+            <ul class="content-list">
+                <li>Резисторы</li>
+                <li>Транзичторы</li>
+                <li>Кондденсаторы</li>
+                <li>Катушки индуктивности и трансформаторы</li>
+                <li>Микропроцессоры и микроконтролеры</li>
+                <li>И так список можно продолть и он будет очень большим</li>
+            </ul>
+        </p>
+        <p>
+            Компонеты на плату чаше наносится в ручную при
+            помощи паяльника и припоя. Ну бывают случаи когда компонеты
+            настолько мальнькие что их приходится монтировать на плату только
+            на производстве.
+        </p>
+        <p class="quote">"Это не баг, это фича"</p>
+    </div>
+
+    <h2 class="content-header" id="gallery">Галерея</h2>
+    <ul class="gallery">
+        <li class="gallery-img"><img src="gallery/IMG_20190704_134911.jpg" alt=""></li>
+        <li class="gallery-img"><img src="gallery/IMG_20190705_170256.jpg" alt=""></li>
+        <li class="gallery-img"><img src="gallery/IMG_20190814_145101.jpg" alt=""></li>
+        <li class="gallery-img"><img src="gallery/IMG_20190821_085442 (1).jpg" alt=""></li>
+        <li class="gallery-img"><img src="gallery/IMG_20190920_171529.jpg" alt=""></li>
+        <li class="gallery-img"><img src="gallery/photo_2019-12-04_03-12-29.jpg" alt=""></li>
+        <li class="gallery-img"><img src="gallery/photo_2019-12-04_03-12-44 (2).jpg" alt=""></li>
+        <li class="gallery-img"><img src="gallery/photo_2019-12-04_03-12-44.jpg" alt=""></li>
+        <li class="gallery-img"><img src="gallery/photo_2019-12-04_03-12-29.jpg" alt=""></li>
+        <li class="gallery-img"><img src="gallery/IMG_20190705_170256.jpg" alt=""></li>
+        <li class="gallery-img"><img src="gallery/IMG_20190704_134911.jpg" alt=""></li>
+        <li class="gallery-img"><img src="gallery/photo_2019-12-04_03-12-29.jpg" alt=""></li>
+    </ul>
+    
+    <h2 class="content-header" id="сontacts">Контакты</h2>
+    <ul class="contacts">
+        <li id="telegram"><a  href="https://t.me/redevicelab">telegram</a></li>
+        <li id="instagram"><a  href="#">Instagram</a></li>
+        <li id="skype"><a  href="#">Skype</a></li>
+        <li id="vk"><a  href="#">Vkontakte</a></li>
+    </ul>
+
+
+    <div class="callback" id="feedback">
+        <form action="" method="get">
+            <div class="form-head">
+                <div id="btn-close"><a href="#">x</a></div>
+                <h3>Заказать обратный звонок</h3>
+
+            </div>
+            <div class="form-body">
+                <p >Оставте нам ваши контактные данные. Мы вам перезвоним</p>
+                <input type="text" name="name" id="" placeholder="Имя *">
+                <input type="tel" name="phone" id="" placeholder="Телефон *">
+                <input type="text" name="email" id="" placeholder="E-Mail *">
+                <textarea name="comment" id="" cols="30" rows="10" placeholder="Комментарий *"></textarea>
+            </div>
+            <div class="form-submit">
+                <input type="submit" value="Отправить">
+            </div>
+        </form>
+    </div>
+
+
+    <footer>
+        Copyright RedeviceLab
+    </footer>
+    
+</body>
+
+</html>

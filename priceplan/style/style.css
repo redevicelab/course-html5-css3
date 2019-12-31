@@ -1,0 +1,117 @@
+*{
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+#price-table {
+    margin: 100px auto;
+    text-align: center;
+    width: 1200px;
+}
+
+#price-table .plan {
+    background: #fff;      
+    border: 1px solid #000;
+    border-radius: 20px;
+    padding: 20px;
+    width: 200px;
+    float: left;
+    position: relative;
+    margin: 0 5px;
+}
+
+#price-table .header {
+    position: relative;
+    font-size: 20px;
+    font-weight: normal;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    text-transform: uppercase;
+    padding: 20px;
+    margin: -20px -20px 20px -20px;
+    border-bottom: 3px solid;
+    background-color: #fff;
+}
+
+#price-table .plan1 .header{
+    border-bottom-color: #C62E4F;
+}
+
+#price-table .plan2 .header{
+    border-bottom-color: #D58C33;
+}
+
+#price-table .plan3 .header{
+    border-bottom-color: #225F84;
+}
+
+#price-table .plan4 .header{
+    border-bottom-color: #5CB82B;
+}
+
+/* -----------------Анимируем увеличение------------------------ */
+#price-table .plan:hover {
+/* Я решул тут использовать scale так как используя другие простые методы оувеличения при изменение одного лиш параметра все ломается */
+    transform: scale(1.1);
+    transition: 0.5s;
+    z-index: 10;
+}
+
+#price-table .plan:hover .header {
+    padding-top: 35px;
+    transition: 1s;
+}
+
+
+#price-table .price{
+    font-size: 45px;
+}
+
+#price-table .monthly{
+    font-size: 13px;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+    color: #999;
+}
+
+/* ----------Cписочек услуг---------------------------- */
+
+#price-table ul {
+    margin: 10px 0;
+    padding: 0;
+    list-style: none;
+}
+
+#price-table li {
+    padding: 15px 0;
+}
+
+
+/* --------------------Кнопочки------------------ */
+
+#price-table .button {
+    position: relative;
+    padding: 10px 40px;
+    color: #fff;
+    font: bold 14px;
+    text-transform: uppercase;
+    text-decoration: none;
+    display: inline-block;       
+    border-radius: 10px;     
+}
+
+#price-table .plan1 .button{
+    background: #C62E4F;
+}
+
+#price-table .plan2 .button{
+    background: #D58C33;
+}
+
+#price-table .plan3 .button{
+    background: #225F84;
+}
+
+#price-table .plan4 .button{
+    background: #5CB82B;
+}
+

@@ -1,0 +1,284 @@
+
+* {
+	box-sizing: border-box;
+}
+body {
+	font-family: 'Montserrat', sans-serif;
+	line-height: 1.6;
+	margin: 0;
+	min-height: 100vh;
+}
+ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+
+h2,h3,a {
+	color: #34495e;
+}
+
+a {
+	text-decoration: none;
+}
+
+.logo {
+	margin: 0;
+	font-size: 1.45em;
+}
+
+.main-nav {
+	margin-top: 5px;
+
+}
+.logo a,
+.main-nav a {
+	padding: 10px 15px;
+	text-transform: uppercase;
+	text-align: center;
+	display: block;
+}
+
+.main-nav a {
+	color: #34495e;
+	font-size: .99em;
+}
+
+.main-nav a:hover {
+	color: #718daa;
+}
+
+
+
+.header {
+	padding-top: .5em;
+	padding-bottom: .5em;
+	border: 1px solid #a2a2a2;
+	background-color: #f4f4f4;
+	box-shadow: 0px 0px 14px 0px rgba(0,0,0,0.75);
+	border-radius: 5px;
+}
+
+@media (min-width: 769px) {
+	.header,
+	.main-nav {
+		display: flex;
+	}
+	.header {
+		flex-direction: column;
+		align-items: center;
+		.header {
+			width: 80%;
+			margin: 0 auto;
+			max-width: 1150px;
+		}
+	}
+
+}
+
+@media (min-width: 1025px) {
+	.header {
+		flex-direction: row;
+		justify-content: space-between;
+	}
+
+}
+
+.img-block{
+	margin-top: 10px;
+    width: 100%;
+    min-width: 10%;
+    background-image: url(img/pcb.jpg);
+    background-color: black;
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    min-height: 400px;
+    overflow: hidden;    
+}
+
+.content{
+	min-width: 500px;
+	max-width: 90%;
+	margin: 0 auto;
+	font-size: 1.3em;
+	text-indent: 1em;
+}
+
+.content-header{
+	text-align: center;
+	border-bottom: 1px solid #cccccc;
+	margin: 50px 0;
+}
+
+.quote {
+    font-size: 1.1em;
+    text-align: right;
+	margin-top: 10px;
+	text-decoration: underline;
+}
+
+.content-list{
+	margin: 0;
+    padding: 10px 0 10px 0;
+}
+.content-list li{
+	padding: 0.3em 0;
+}
+
+.content-list li::before {
+    content: "\2718";
+    display: inline-block;
+    height: 15px;
+    margin-left: 20px;
+    margin-right: 20px;
+    color: #cccccc;
+}
+
+  .box-cards{
+	padding: .5vw;
+	font-size: 0;
+	flex-flow: row wrap; 
+	display: flex;
+  }
+
+  .box-cards .cards{
+	flex: auto; 
+	width: 300px; 
+	margin: .5vw;
+  }
+
+  .cards img{
+	width: 100%; 
+	height: auto;
+  }
+
+  @media screen and (max-width: 400px) {
+	header div { margin: 0; }
+	header { padding: 0; }
+	
+  }
+
+  footer{
+	border: 1px solid #a2a2a2;
+	background-color: #f4f4f4;
+	box-shadow: 0px 0px 14px 0px rgba(0,0,0,0.75);
+	border-radius: 5px;
+	height: 100px;
+  }
+
+  .gallery{
+	display: flex;
+	flex-wrap: wrap;
+	list-style: none;
+  }
+  
+  .gallery-img {
+	height: 40vh;
+	flex-grow: 1;
+  }
+  
+  .gallery-img:last-child {
+	flex-grow: 10;
+  }
+  
+  img {
+	max-height: 100%;
+	min-width: 100%;
+	object-fit: cover;
+	vertical-align: bottom;
+  }
+  
+  
+  @media (max-aspect-ratio: 1/1) {
+	.gallery-img {
+	  height: 30vh;
+	}
+  }
+  
+  
+  @media (max-height: 480px) {
+	.gallery-img {
+	  height: 80vh;
+	}
+  }
+  
+  
+  @media (max-aspect-ratio: 1/1) and (max-width: 480px) {
+	ul {
+	  flex-direction: row;
+	}
+  
+	.gallery-img {
+	  height: auto;
+	  width: 100%;
+	}
+	img {
+	  width: 100%;
+	  max-height: 75vh;
+	  min-width: 0;
+	}
+  }
+
+.contacts{
+	display: flex;
+    margin: 0;
+	padding: 10px 0 0 0;
+	justify-content: center;
+	align-items: center;
+	height: 30vh;
+}
+
+.contacts li{
+	
+    list-style: none;
+    margin: 10px;
+    padding: auto;
+    text-transform: uppercase;
+}
+
+.contacts li a{
+    text-decoration-line: none;
+    color: black;
+}
+
+.contacts li a:hover{
+    cursor: pointer;
+}
+
+.contacts li#telegram::before {
+    content: "";
+    display: inline-block;
+    width: 64px;
+    height: 64px;
+    vertical-align: middle;
+    background-image: url(img/telegram-64x64.png);
+}
+
+.contacts li#instagram::before {
+    content: "";
+    display: inline-block;
+    width: 64px;
+    height: 64px;
+    vertical-align: middle;
+    background-image: url(img/instagram-64x64.png);
+}
+
+.contacts li#skype::before {
+    content: "";
+    display: inline-block;
+    width: 64px;
+    height: 64px;
+    vertical-align: middle;
+    background-image: url(img/skype_2-64x64.png);
+}
+
+.contacts li#vk::before {
+    content: "";
+    display: inline-block;
+    width: 64px;
+    height: 64px;
+    vertical-align: middle;
+    background-image: url(img/vk-64x64.png);
+}

@@ -1,0 +1,197 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: 'Handlee', cursive;
+}
+
+
+header{
+    width: 100%;
+    min-width: 10%;
+    background-image: url(img/pcb.jpg);
+    background-color: black;
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    min-height: 400px;
+    overflow: hidden;    
+}
+
+p {
+    text-align: justify;
+    padding-top: 15px;
+    text-indent: 20px;
+}
+
+#logo{
+    padding: 18px 0 100px 0;
+    margin: 0 0 10px 0;
+    position: relative;
+    text-align: center;
+    color: #FFF;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 50pt;
+    opacity: 80%;
+}
+
+#logo span{
+    display: inline-block;
+    vertical-align: middle;
+    border: 5px dashed;
+    padding: 10px;
+}
+
+#headerme {
+    font-size: 30 pt;
+    color: #20bcd5;
+    text-align: center;
+    padding: 18px 0 18px 0;
+    margin: 0 0 10px 0;
+}
+
+.box-menu {
+    margin: 10px;
+    display: flex;
+    /* align-items: flex-start; */
+    flex-wrap: nowrap;
+    justify-content: flex-end;
+    height: 100%;
+  }
+.btn-menu {
+    margin-left: 1px;
+    width: auto;
+    border: solid 3px;
+    color: black;
+    background-color: white;
+    font-size: 2em;
+    text-decoration-line: none;
+  }
+
+.box-menu:link{
+   color: black;
+   
+}
+
+.box-menu:visited{
+    color: black;
+}
+
+.box-menu:active{
+    color: white;
+    background-color: black;
+}
+
+.box-menu:hover{
+    cursor: pointer;
+}
+
+.aboutme ul{
+    margin: 0;
+    padding: 10px 0 0 0;
+}
+
+.aboutme ul li{
+    list-style: none;
+    padding: 0 10px;
+}
+
+.aboutme ul li::before {
+    content: "\2718";
+    display: inline-block;
+    width: 15px;
+    height: 15px;
+    margin-left: 20px;
+    margin-right: 20px;
+    color: rgb(116, 42, 0);
+}
+
+.aboutme{
+    position: relative;
+    width: 75%;
+    max-width: 75%;
+    margin: 100px auto;
+    font-size: 18pt;
+}
+
+
+.quote {
+    font-size: 12pt;
+    text-align: right;
+    margin-top: 10px;
+}
+
+.contacts{
+    width: 35%;
+    max-width: 500px;
+    margin: 100px auto;
+    text-decoration-line: none;
+    font-size: 1.5em;
+}
+
+.contacts ul{
+    margin: 0;
+    padding: 10px 0 0 0;
+}
+
+.contacts li{
+    list-style: none;
+    margin: 10px;
+    padding: auto;
+    text-transform: uppercase;
+}
+
+.contacts li a{
+    text-decoration-line: none;
+    color: black;
+}
+
+.contacts li a:hover{
+    cursor: pointer;
+}
+
+.contacts li#telegram::before {
+    content: "";
+    display: inline-block;
+    width: 64px;
+    height: 64px;
+    vertical-align: middle;
+    background-image: url(img/telegram-64x64.png);
+}
+
+.contacts li#instagram::before {
+    content: "";
+    display: inline-block;
+    width: 64px;
+    height: 64px;
+    vertical-align: middle;
+    background-image: url(img/instagram-64x64.png);
+}
+
+.contacts li#skype::before {
+    content: "";
+    display: inline-block;
+    width: 64px;
+    height: 64px;
+    vertical-align: middle;
+    background-image: url(img/skype_2-64x64.png);
+}
+
+.contacts li#vk::before {
+    content: "";
+    display: inline-block;
+    width: 64px;
+    height: 64px;
+    vertical-align: middle;
+    background-image: url(img/vk-64x64.png);
+}
+
+h3{
+    text-align: center;
+    font-size: 21pt;
+}
+
+.gallery{
+    display: flex;
+}
+
